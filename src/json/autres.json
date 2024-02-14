@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Agile Scrum",
+        "imgSrc": "./images/scrum.png",
+        "details": 50,
+        "lien": "https://www.scrum.org/courses/recommended-courses-scrum-masters?utm_source=google&utm_medium=adwords&utm_id=psmii&adgroup={groupid}&gclid=CjwKCAiA_aGuBhACEiwAly57MXMlhVZ9ZM8hbCN27JMWC2sIBIwao_o9M3jCl9u7BV5vJZ83zZj2wxoCyn4QAvD_BwE"
+    },
+    {
+        "title": "UML",
+        "imgSrc": "./images/uml.png",
+        "details": 30,
+        "lien": "https://www.lucidchart.com/pages/uml-class-diagram"
+    }
+]

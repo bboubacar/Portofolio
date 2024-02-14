@@ -1,0 +1,37 @@
+@mixin show-menu-text($text-color, $bg-color) {
+    width: 100%;
+    border-radius: 50px;
+    color: $text-color;
+    background: $bg-color;
+
+    span.text {
+        display: inline;
+    }
+}
+
+@mixin maintitle() {
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+@mixin body-size() {
+    width: $body-width;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+@mixin btn-style($text-color, $bg-color) {
+    font-size: 15px;
+    padding: 18px;
+    margin-bottom: 8px;
+    display:flex;
+    height: 50px;
+    font-weight: 600;
+    text-decoration: none;    
+    overflow: hidden;
+    transition: $transition-time;
+    cursor: pointer;
+    @include show-menu-text($text-color, $bg-color);
+}

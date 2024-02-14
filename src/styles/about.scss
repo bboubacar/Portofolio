@@ -1,0 +1,44 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.bcr-about {
+    opacity: 1;
+    color: $dark-color;
+
+    .bcr-about-introduce {
+        @include body-size();
+        max-width: 800px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $dark-light;
+
+        figure {
+            height: 180px;
+            position: relative;
+            width: 168px;
+            margin: 0 auto;
+
+            img {
+                height: 100%;
+                border-radius: 40%;
+            }
+        }
+        .bcr-about-details {
+            text-align: center;
+            
+            h1 {
+                font-size: 2.2em;
+                margin: 20px 0 10px 0;
+            }
+
+            p {
+                font-size: 1.2em;
+                line-height: 1.5;
+            }
+
+            .adresse {
+                font-weight: 600;
+                margin-top: 30px;
+            }
+        }
+    }
+}

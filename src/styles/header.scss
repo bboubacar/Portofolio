@@ -1,0 +1,130 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+#header {
+    position: fixed;
+    display: flex;
+    width: $menu-width;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    nav {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.nav-menu {
+    ul {
+        padding: 0 $default-padding;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transition: all $transition-time;
+        border-right: 2px solid $light-gray-color;
+        background-color: #fff;
+
+        .active{
+            color: $white-color;
+            background: $blue-color;
+        }
+    }
+    
+}
+
+.nav-menu ul li a {
+    @include btn-style($dark-color, $light-gray-color);
+
+    &:hover {
+        @include show-menu-text($white-color, $blue-color);
+    }
+
+    span {
+        position: relative;
+        bottom: 2px;
+    }
+
+    span.text {
+        margin-left: $default-padding;
+    }
+
+    span.text::first-letter{
+        text-transform: uppercase;
+    }
+}
+
+.nav-menu {
+    aside {
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        position: absolute;
+        bottom: 20px;
+        z-index: 8;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: $dark-color;
+
+        svg{
+            color: $dark-color;
+            margin: 0 10px;
+            padding: 5px;
+            font-size: 30px;
+            &:hover {
+                color: $blue-color;
+                opacity: 1;
+            }
+        }
+    }
+ 
+}
+
+#menuCheckbox, .checkbtn {
+    display: none;
+}
+
+.checkbtn {
+    color: $blue-color;
+    position: fixed;
+    top: $default-padding;
+    right: $default-padding;
+    padding: $default-padding;
+    font-size: 25px;
+    cursor: pointer;
+
+    .closeMenu {
+        display: none;
+    }
+}
+
+#menuCheckbox:checked ~ label{
+
+    .toggleMenu {
+        display: none;
+    }
+    .closeMenu {
+        display: block;
+    }
+}
+
+#menuCheckbox:checked ~ ul {
+    left: 0;
+}
+
+@media (max-width: $screen-size) {
+    .nav-menu {
+        ul {
+            left: - calc($menu-width + 50px);
+        }
+    }
+    .checkbtn {
+        display: block;
+    }
+}

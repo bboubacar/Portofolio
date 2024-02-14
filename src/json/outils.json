@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Git",
+        "imgSrc": "./images/git.png",
+        "details": 70,
+        "lien": "https://git-scm.com/"
+    },
+    {
+        "title": "Postman",
+        "imgSrc": "./images/postman.png",
+        "details": 50,
+        "lien": "https://www.postman.com/"
+    },
+    {
+        "title": "Trello",
+        "imgSrc": "./images/trello.png",
+        "details": 50,
+        "lien": "https://trello.com/"
+    },
+    {
+        "title": "Figma",
+        "imgSrc": "./images/figma.png",
+        "details": 65,
+        "lien": "https://www.figma.com/"
+    }
+]

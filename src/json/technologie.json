@@ -1,0 +1,32 @@
+[
+    {
+        "title": "HTML-CSS",
+        "imgSrc": "./images/html-css.png",
+        "details": 80,
+        "lien": "https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3"
+    },
+    {
+        "title": "JAVASCRIPT",
+        "imgSrc": "./images/js.png",
+        "details": 50,
+        "lien": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+        "title": "REACT JS",
+        "imgSrc": "./images/react.png",
+        "details": 50,
+        "lien": "https://react.dev/"
+    },
+    {
+        "title": "NODE JS",
+        "imgSrc": "./images/node.png",
+        "details": 20,
+        "lien": "https://nodejs.org/en"
+    },
+    {
+        "title": "MONGODB",
+        "imgSrc": "./images/mongodb.png",
+        "details": 20,
+        "lien": "https://www.mongodb.com/fr-fr"
+    }
+]
