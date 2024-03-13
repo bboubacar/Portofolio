@@ -4,7 +4,8 @@
 .bcr-about {
     opacity: 1;
     color: $dark-color;
-
+    background: #f2f2f2 url("../../public/images/background.jpg") no-repeat center;
+    background-size: cover;
     .bcr-about-introduce {
         @include body-size();
         max-width: 800px;
@@ -19,7 +20,7 @@
 
             img {
                 height: 100%;
-                border-radius: 40%;
+                border-radius: 50%;
             }
         }
         .bcr-about-details {

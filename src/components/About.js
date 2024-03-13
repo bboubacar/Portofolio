@@ -5,7 +5,7 @@ function About({id, constactId}) {
         <article className="bcr-about" id={id}>
             <div className="bcr-about-introduce">
                 <figure className="bcr-about-image">
-                    <img src="images/profil.jpg" alt="Les contenus HTML5" />
+                    <img src="images/balde.png" alt="Les contenus HTML5" />
                 </figure>
                 <div className="bcr-about-details">
                     <h1>Boubacar Baldé</h1>
