@@ -8,7 +8,8 @@ import CIcon from "@coreui/icons-react";
 import { cifGb, cifFr } from "@coreui/icons";
 
 export const Header = () => {
-    const [i18n] = useTranslation("global");
+    // @ts-ignore
+    const [t, i18n] = useTranslation("global");
     const [curLng, setCurLng] = useState("fr");
     const [menuOpen, setMenuOpen] = useState(false);
 
