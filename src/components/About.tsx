@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 export const About = () => {
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     const about = t("about", { returnObjects: true }) as {
         title: string;

@@ -12,11 +12,6 @@ export const Header = () => {
     const [curLng, setCurLng] = useState("fr");
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const menu = t("menu", { returnObjects: true }) as {
-        title: string;
-        liste: Array<string>;
-    };
-
     function toggleMenu() {
         setMenuOpen(!menuOpen);
     }
