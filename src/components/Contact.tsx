@@ -67,13 +67,19 @@ export const Contact = () => {
         }
     };
 
+    const contact = t("contact", { returnObjects: true }) as {
+        title: string;
+        name: string;
+        send: string;
+    };
+
     const menu = t("menu", { returnObjects: true }) as {
         liste: Array<string>;
     };
 
     return (
         <section className="contact" id={menu?.liste[3]?.toLowerCase()}>
-            <h2>Contact</h2>
+            <h2>{contact?.title}</h2>
             <article className="infos">
                 <div className="addr">
                     <PiMapPin />
@@ -103,7 +109,7 @@ export const Contact = () => {
                         <input
                             value={name}
                             type="text"
-                            placeholder="Nom"
+                            placeholder={contact?.name}
                             onChange={handleNameChange}
                             required
                         />
@@ -128,7 +134,7 @@ export const Contact = () => {
                     </label>
                     <input
                         type="submit"
-                        value="Envoyer"
+                        value={contact?.send}
                         className="send-btn"
                         aria-label="Envoyer votre mail"
                     />

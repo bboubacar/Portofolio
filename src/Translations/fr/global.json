@@ -14,9 +14,8 @@
     },
     "contact": {
         "title": "Contact",
-        "mail": "bboubacarfr@gmail.com",
-        "tel": "+33 744 17 51 19",
-        "addr": "France, 16000 Angoulême, 47 Boulevard d’Auvergne"
+        "name": "Nom",
+        "send": "Envoyer"
     },
     "skills": {
         "title": "COMPÉTENCES",
