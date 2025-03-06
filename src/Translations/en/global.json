@@ -1,0 +1,60 @@
+{
+    "menu":{
+        "title": "Menu",
+        "liste": ["About", "Skills", "Projects", "Contact"]
+    },
+    "about": {
+        "title": "Fullstack web developer",
+        "desc": "Full-stack web developer with skills in JavaScript, React, Node.js, Php, CI/CD deployment, database management and Docker. Passionate about creating robust and efficient web solutions. Looking for opportunities to develop my skills in an innovative environment.",
+        "cv": "Download CV",
+        "pdf": {
+            "fileUrl": "pdf/BoubacarBaldeEn.pdf",
+            "fileName": "BoubacarBaldeEn.pdf"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "mail": "bboubacarfr@gmail.com",
+        "tel": "+33 744 17 51 19",
+        "addr": "France, 16000 Angoulême, 47 Boulevard d’Auvergne"
+    },
+    "skills": {
+        "title": "skills",
+        "desc": "Throughout my training and internship, I developed the skills necessary to design and create a complete web application, from the initial idea to its deployment.",
+        "techs": [
+            {
+                "icon": "DiCodeBadge",
+                "title": "Frontend",
+                "list": "React/Redux/TypeSript, Javascript, HTML/CSS/SASS/Tailwind, Rest API, SEO"
+            },
+            {
+                "icon": "DiDatabase",
+                "title": "Backend",
+                "list": "PHP, Nodejs, Create une API, MySql, MongoDb, SQL"
+            },
+            {
+                "icon": "DiGitBranch",
+                "title": "Others",
+                "list": "UML, Figma, Github/Git, Docker, Scrum/Kanban, CI/CD"
+            }
+        ]
+    },
+    "projects":{
+        "title": "PROJECTS",
+        "btn" : "visit",
+        "liste":[
+            {
+                "title": "Internship project",
+                "imgSrc": "/images/emploi_ideal.png",
+                "items": ["React", "Redux", "SASS", "Emailjs", "Php/POO/API","Mysql/SQL", "Token"],
+                "link": "https://emploi-ideal.netlify.app/"
+            },
+            {
+                "title": "Github projects",
+                "imgSrc": "/images/github.png",
+                "items": ["React", "Redux", "SASS", "Emailjs", "Php/POO/API","Javascript", "Token", "HTML/CSS","Taliwind", "Nodejs", "MongoDb"],
+                "link": "https://github.com/bboubacar?tab=repositories"
+            }
+        ]
+    }
+}

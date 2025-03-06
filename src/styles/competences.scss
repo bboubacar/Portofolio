@@ -1,0 +1,116 @@
+.competences{
+    color: $blackColor;
+    padding: $paddingMain;
+    margin-top: 3rem;
+
+    .desc{
+        margin-bottom: 2rem;
+
+        h2{
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: .8rem;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+        }
+    }
+
+    .liste{
+        display: flex;
+        justify-content: space-between;
+
+        .item{
+            width: 33%;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 1px 1px 3px 1px $lightBlue;
+            border-radius: 5px;
+
+
+            .icon{
+                background: $lightBlue;
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg{
+                    height: 70%;
+                    width: 70%;
+                }
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+
+            h3{
+                font-size: 1.6rem;
+                margin: .9rem 0 .5rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+                text-align: center;
+                line-height: 1.6rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $PcMaxWidth){
+    .competences{
+        padding: $paddingPc;
+    }
+}
+
+@media (max-width: $tabletteMaxWidth){
+    .competences{
+        .desc{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        
+        .liste{
+            .item{
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $tabletteMinWidth){
+    .competences{
+        .liste{
+            flex-direction: column;
+            row-gap: 2rem;
+
+            .item{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobileMaxWidth){
+    .competences{
+        .liste{
+            .item{
+                p{
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+}

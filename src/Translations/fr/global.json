@@ -1,0 +1,60 @@
+{
+    "menu":{
+        "title": "Menu",
+        "liste": ["APropos", "Compétences", "Projets", "Contact"]
+    },
+    "about": {
+        "title": "Développeur web Fullstack",
+        "desc": "Développeur web full-stack avec des compétences en JavaScript, React, Node.js, Php, déploiement CI/CD, la gestion de bases de données et Docker. Passionné par la création de solutions web robustes et performantes. À la recherche d’opportunités pour développer mes compétences dans un environnement innovant.",
+        "cv": "Télécharger CV",
+        "pdf": {
+            "fileUrl": "pdf/BoubacarBalde.pdf",
+            "fileName": "BoubacarBalde.pdf"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "mail": "bboubacarfr@gmail.com",
+        "tel": "+33 744 17 51 19",
+        "addr": "France, 16000 Angoulême, 47 Boulevard d’Auvergne"
+    },
+    "skills": {
+        "title": "COMPÉTENCES",
+        "desc": "Au fil de ma formation et de mon stage, j’ai développé les compétences nécessaires pour concevoir et réaliser une application web complète, de l’idée initiale à son déploiement.",
+        "techs": [
+            {
+                "icon": "DiCodeBadge",
+                "title": "Frontend",
+                "list": "React/Redux/TypeSript, Javascript, HTML/CSS/SASS/Tailwind, Consommation d'API Rest, référencement"
+            },
+            {
+                "icon": "DiDatabase",
+                "title": "Backend",
+                "list": "PHP, Nodejs, Crée une API, MySql, MongoDb, SQL"
+            },
+            {
+                "icon": "DiGitBranch",
+                "title": "Autres",
+                "list": "UML, Figma, Github/Git, Docker, Scrum/Kanban, CI/CD"
+            }
+        ]
+    },
+    "projects":{
+        "title": "PROJETS",
+        "btn" : "visite",
+        "liste":[
+            {
+                "title": "Projet de stage",
+                "imgSrc": "/images/emploi_ideal.png",
+                "items": ["React", "Redux", "SASS", "Emailjs", "Php/POO/API","Mysql/SQL", "Token"],
+                "link": "https://emploi-ideal.netlify.app/"
+            },
+            {
+                "title": "Projets Github",
+                "imgSrc": "/images/github.png",
+                "items": ["React", "Redux", "SASS", "Emailjs", "Php/POO/API","Javascript", "Token", "HTML/CSS","Taliwind", "Nodejs", "MongoDb"],
+                "link": "https://github.com/bboubacar?tab=repositories"
+            }
+        ]
+    }
+}

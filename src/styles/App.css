@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+html main * {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+html main .container {
+  max-width: 1600px;
+  margin: 0 auto;
+}/*# sourceMappingURL=App.css.map */

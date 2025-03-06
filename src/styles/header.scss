@@ -1,0 +1,123 @@
+header{
+    min-height: 80px;
+    padding: 1.2rem 5rem;
+    background-color: $blue;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+
+        *{
+            color: $whiteColor;
+        }
+    
+        @include sMedia();
+    
+        .nav-burger-menu{
+            display: none;
+            position: absolute;
+            right: 1.2rem;
+    
+            svg{
+                font-size: 1.8rem;
+                cursor: pointer;
+                transition: stroke .1s linear;
+    
+                &:hover{
+                    stroke: $lightBlue;
+                }
+            }
+        }
+    
+        nav{
+            display: flex;
+            justify-content: center;
+            column-gap: 1.5rem;
+            margin-right: 5rem;
+    
+            a{
+                border-radius: 5px;
+                padding: .5rem 1.5rem;
+                color: #FFF;
+                text-decoration: none;
+                font-weight: bold;
+                border: 1px solid #FFF;
+                transition: all .25s linear;
+                text-transform: uppercase;
+    
+                &:hover{
+                    border-color: $lightBlue;
+                    background-color: $lightBlue;
+                    color: $blackColor;
+                }
+            }
+        }
+
+        .langues{
+            position: absolute;
+            right: 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            svg{
+                height: 37px;
+                width: 60px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: $PcMaxWidth){
+    header{
+        padding: $paddingPc;
+        .container{
+            nav{
+                a{
+                    padding: .4rem 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $tabletteMaxWidth){
+    header{
+        &:has(.opened) + .about{
+            margin-top: -225px;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .langues{
+                svg{
+                    height: 25px;
+                }
+            }
+
+            .nav-burger-menu{
+                display: block;
+                margin-right: 3rem;
+            }
+
+            nav{
+                flex-direction: column;
+                margin-top: 1.5rem;
+                width: 100%;
+
+                a{
+                    border: none;
+                    padding: .8rem .5rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
