@@ -15,7 +15,8 @@
     "contact": {
         "title": "Contact",
         "name": "name",
-        "send": "Send"
+        "send": "Send",
+        "email": "Your email"
     },
     "skills": {
         "title": "skills",

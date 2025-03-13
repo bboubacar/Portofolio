@@ -71,6 +71,7 @@ export const Contact = () => {
         title: string;
         name: string;
         send: string;
+        email: string;
     };
 
     const menu = t("menu", { returnObjects: true }) as {
@@ -106,6 +107,7 @@ export const Contact = () => {
                         {sendSms}
                     </div>
                     <label>
+                        <span>{contact?.name}</span>
                         <input
                             value={name}
                             type="text"
@@ -115,15 +117,17 @@ export const Contact = () => {
                         />
                     </label>
                     <label>
+                        <span>{contact?.email}</span>
                         <input
                             value={email}
                             type="email"
-                            placeholder="Email"
+                            placeholder="Votre email"
                             onChange={handleEmailChange}
                             required
                         />
                     </label>
                     <label>
+                        <span>Message</span>
                         <textarea
                             value={message}
                             placeholder="Message"
